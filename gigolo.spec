@@ -1,18 +1,20 @@
 Summary:	Frontend for GIO/GVFS
-Name:		sion
-Version:	0.1.0
+Name:		gigolo
+Version:	0.2.0
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
-Url:		http://goodies.xfce.org/projects/applications/sion
-Source0:	http://goodies.xfce.org/releases/sion/sion-0.1.0.tar.bz2
+Url:		http://goodies.xfce.org/projects/applications/%{name}
+Source0:	http://goodies.xfce.org/releases/%{name}/%{name}-%{version}.tar.bz2
 BuildRequires:	waf
 BuildRequires:	intltool
 BuildRequires:	gtk+2-devel
+Obsoletes:	sion < 0.2.0
+Provides:	sion
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
-Sion is a frontend to easily manage connections to remote filesystems 
+Gigolo is a frontend to easily manage connections to remote filesystems 
 using GIO/GVFS. It allows you to quickly connect/mount a remote filesystem 
 and manage bookmarks of such.
 
