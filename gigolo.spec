@@ -1,7 +1,7 @@
 Summary:	Frontend for GIO/GVFS
 Name:		gigolo
-Version:	0.2.1
-Release:	%mkrel 2
+Version:	0.3.1
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 Url:		http://goodies.xfce.org/projects/applications/%{name}
