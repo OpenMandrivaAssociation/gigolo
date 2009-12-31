@@ -1,11 +1,13 @@
+%define url_ver %(echo %{version} | cut -c 1-3)
+
 Summary:	Frontend for GIO/GVFS
 Name:		gigolo
-Version:	0.3.2
+Version:	0.4.0
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 Url:		http://goodies.xfce.org/projects/applications/%{name}
-Source0:	http://goodies.xfce.org/releases/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://archive.xfce.org/src/apps/gigolo/%{url_ver}/%{name}/%{name}-%{version}.tar.bz2
 BuildRequires:	waf
 BuildRequires:	intltool
 BuildRequires:	gtk+2-devel
