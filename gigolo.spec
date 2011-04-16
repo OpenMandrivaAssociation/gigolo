@@ -1,7 +1,7 @@
 Summary:	Frontend for GIO/GVFS
 Name:		gigolo
 Version:	0.4.1
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 Url:		http://www.uvena.de/gigolo/
