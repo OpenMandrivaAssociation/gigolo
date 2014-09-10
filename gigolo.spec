@@ -1,12 +1,13 @@
+%define url_ver %(echo %{version} | cut -c 1-3)
+
 Summary:	Frontend for GIO/GVFS
 Name:		gigolo
-Version:	0.4.1
-Release:	10
+Version:	0.4.2
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
-Url:		http://www.uvena.de/gigolo/
-Source0:	http://files.uvena.de/gigolo/%{name}-%{version}.tar.bz2
-
+Url:		http://www.xfce.org
+Source0:	http://archive.xfce.org/src/apps/gigolo/%{url_ver}/gigolo-%{version}.tar.bz2
 BuildRequires:	intltool
 BuildRequires:	waf
 BuildRequires:	pkgconfig(gtk+-2.0)
