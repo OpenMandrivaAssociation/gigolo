@@ -9,7 +9,6 @@ Group:		Graphical desktop/Xfce
 Url:		http://www.xfce.org
 Source0:	http://archive.xfce.org/src/apps/gigolo/%{url_ver}/gigolo-%{version}.tar.bz2
 BuildRequires:	intltool
-BuildRequires:	waf
 BuildRequires:	pkgconfig(gtk+-2.0)
 Provides:	sion
 
@@ -22,12 +21,11 @@ and manage bookmarks of such.
 %setup -q
 
 %build
-%define __waf ./waf
-%configure_waf
-%waf
+%configure
+%make
 
 %install
-%waf_install
+%makeinstall_std
 
 rm -rf %{_docdir}/%{name}
 
