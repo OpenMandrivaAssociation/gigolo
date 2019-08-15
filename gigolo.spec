@@ -2,14 +2,17 @@
 
 Summary:	Frontend for GIO/GVFS
 Name:		gigolo
-Version:	0.4.2
-Release:	3
+Version:	0.5.0
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 Url:		http://www.xfce.org
 Source0:	http://archive.xfce.org/src/apps/gigolo/%{url_ver}/gigolo-%{version}.tar.bz2
 BuildRequires:	intltool
-BuildRequires:	pkgconfig(gtk+-2.0)
+BuildRequires:	pkgconfig(gtk+-3.0)
+Recommends:	gvfs-obexftp
+Recommends:	gvfs-smb
+
 Provides:	sion
 
 %description
@@ -22,10 +25,10 @@ and manage bookmarks of such.
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 rm -rf %{_docdir}/%{name}
 
