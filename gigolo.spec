@@ -1,4 +1,5 @@
 %define url_ver %(echo %{version} | cut -c 1-3)
+%define _disable_rebuild_configure 1
 
 Summary:	Frontend for GIO/GVFS
 Name:		gigolo
@@ -24,6 +25,7 @@ and manage bookmarks of such.
 %setup -q
 
 %build
+%xdt_autogen
 %configure
 %make_build
 
