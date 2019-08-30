@@ -11,6 +11,7 @@ Url:		http://www.xfce.org
 Source0:	http://archive.xfce.org/src/apps/gigolo/%{url_ver}/gigolo-%{version}.tar.bz2
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(gtk+-3.0)
+BuildRequires:  xfce-dev-tools
 Recommends:	gvfs-obexftp
 Recommends:	gvfs-smb
 
