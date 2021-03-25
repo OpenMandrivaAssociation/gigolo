@@ -26,7 +26,7 @@ and manage bookmarks of such.
 %setup -q
 
 %build
-%xdt_autogen
+#xdt_autogen
 %configure
 %make_build
 
