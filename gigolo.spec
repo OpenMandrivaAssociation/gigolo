@@ -26,7 +26,6 @@ and manage bookmarks of such.
 %setup -q
 
 %build
-#xdt_autogen
 %configure
 %make_build
 
@@ -38,7 +37,7 @@ rm -rf %{_docdir}/%{name}
 %find_lang %{name} %{name}.lang
 
 %files -f %{name}.lang
-%doc AUTHORS README.md ChangeLog TODO COPYING NEWS
+%doc AUTHORS ChangeLog TODO COPYING NEWS
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/*
