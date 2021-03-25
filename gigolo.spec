@@ -41,5 +41,5 @@ rm -rf %{_docdir}/%{name}
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/*
-%{_iconsdir}/hicolor/128x128/apps/org.xfce.gigolo.png
+%{_iconsdir}/hicolor/*x*/apps/org.xfce.gigolo.png
 %{_iconsdir}/hicolor/scalable/apps/org.xfce.gigolo.svg
