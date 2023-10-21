@@ -37,7 +37,7 @@ rm -rf %{_docdir}/%{name}
 %find_lang %{name} %{name}.lang
 
 %files -f %{name}.lang
-%doc AUTHORS ChangeLog TODO COPYING NEWS
+%doc AUTHORS ChangeLog TODO COPYING NEWS README.md
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/*
