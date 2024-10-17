@@ -7,7 +7,7 @@ Version:	0.5.3
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
-Url:		http://www.xfce.org
+Url:		https://www.xfce.org
 Source0:	http://archive.xfce.org/src/apps/gigolo/%{url_ver}/gigolo-%{version}.tar.bz2
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(gtk+-3.0)
