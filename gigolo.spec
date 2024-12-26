@@ -3,12 +3,12 @@
 
 Summary:	Frontend for GIO/GVFS
 Name:		gigolo
-Version:	0.5.3
+Version:	0.5.4
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 Url:		https://www.xfce.org
-Source0:	http://archive.xfce.org/src/apps/gigolo/%{url_ver}/gigolo-%{version}.tar.bz2
+Source0:	https://archive.xfce.org/src/apps/gigolo/%{url_ver}/gigolo-%{version}.tar.bz2
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:  xfce-dev-tools
@@ -23,7 +23,7 @@ using GIO/GVFS. It allows you to quickly connect/mount a remote filesystem
 and manage bookmarks of such.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
