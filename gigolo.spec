@@ -9,6 +9,11 @@ License:	GPLv2+
 Group:		Graphical desktop/Xfce
 Url:		https://www.xfce.org
 Source0:	https://archive.xfce.org/src/apps/gigolo/%{url_ver}/gigolo-%{version}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:  xfce-dev-tools
